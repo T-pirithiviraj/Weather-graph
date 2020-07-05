@@ -48,7 +48,7 @@ class Graph extends Component {
         }
         return ( 
             <React.Fragment>
-                <div class={styles.header}>     
+                <div className={styles.header}>     
                     <button onClick={this.previousPage} style={buttonStyle}> Click For Home Page </button>
                     <h1>Forecast Graph</h1>
                 </div>

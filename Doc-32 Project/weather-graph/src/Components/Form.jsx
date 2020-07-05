@@ -20,7 +20,7 @@ class HomePage extends React.Component{
      * Submit Handler to get data from API for forecast 96 hours
      */
     submit = () => {
-        // fetch("http://api.openweathermap.org/data/2.5/weather?q=london&appid=7fe80dc14fea25de6ab7b4d67821e22f", {
+        // fetch("http://api.openweathermap.org/data/2.5/weather?q="+this.state.cityName+"&appid=7fe80dc14fea25de6ab7b4d67821e22f", {
         // })
         // .then(res => res.json())       
         // .then((data) => {
@@ -32,7 +32,7 @@ class HomePage extends React.Component{
         // })
         this.props.history.push("/Graph");      //Route to next page
     }
-    
+
     render() {
         return ( 
             <div className={styles.form}>
